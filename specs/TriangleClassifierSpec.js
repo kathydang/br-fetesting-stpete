@@ -28,21 +28,6 @@ describe('TriangleClassifier', function() {
   });
   
 
-  it('classifies as equilateral 3,3,3', function() {
-    var result = new TriangleClassifier().classify(3,3,3);
-    expect(result).toEqual('equilateral');
-  });
-  
-  // What happens when a side is 0?
-  
-  it('throws an error when a side is 0', function(){
-	  
-	  expect( function(){
-		  new TriangleClassifier().classify(0,1,1);
-		  }).toThrow('oh crap');
-	  
-	  });
-  
   
   // What about a negative side?
 });
